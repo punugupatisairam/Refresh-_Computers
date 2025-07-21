@@ -11,35 +11,362 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <a class="navbar-brand" href="#">
-            <img src="logo.png" alt="Logo" width="40" height="40" class="me-2" />
-            Refresh Computers
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="products.html">Products</a>
-            <a href="reviews.html">Reviews</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="about.html">About Us</a>
-            
-        </nav>
+<header class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <!-- <img src="logo.png" alt="Logo" width="40" height="40" class="me-2" /> -->
+                <span class="fs-4 fw-bold">Refresh Computers</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li> -->
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Home Page -->
-    <main class="container text-center mt-5">
-        <h1 class="display-4">Welcome to Refresh Computers</h1>
-        <p class="lead">Owned by <strong>Sandeep Bollam</strong></p>
-        <p>Your one-stop solution for computer hardware, accessories, and services including door-to-door support.</p>
-        <img src="shop-front.jpg" alt="Shop Front" class="img-fluid rounded shadow" />
-    </main>
+    <!-- Landing Section -->
+    <section class="landing-section d-flex align-items-center justify-content-center text-center">
+        <div class="overlay"></div>
+        <div class="content position-relative w-100">
+            <h1 class="display-2 fw-bold text-white mb-3">Refresh Computers</h1>
+            <h3 class="text-white mb-4"><span class="fw-semibold">Sandeep Bollam</span></h3>
+            <p class="lead text-white mb-4">Your one-stop solution for computer hardware, accessories, and services including door-to-door support.</p>
+            <a href="#products" class="btn btn-primary btn-lg shadow">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container py-5" id="services">
+        <h2 class="text-center mb-5 display-5 fw-bold">Our Services</h2>
+        <div class="row g-4">
+            <!-- Desktop Repair -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Desktop Repair">
+                    <div class="card-body">
+                        <h5 class="card-title">Desktop Repair</h5>
+                        <p class="card-text">Expert troubleshooting and repair for all desktop brands. We fix hardware, software, and offer upgrades with door-to-door service.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Laptop Repair -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Laptop Repair">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop Repair</h5>
+                        <p class="card-text">Fast and reliable laptop repairs, including screen, battery, keyboard, and motherboard issues. On-site support available.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Printer Service -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Printer Service">
+                    <div class="card-body">
+                        <h5 class="card-title">Printer Service</h5>
+                        <p class="card-text">Comprehensive printer repair and maintenance for all models. We resolve paper jams, connectivity, and ink issues at your doorstep.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- CCTV Camera Service -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="CCTV Camera Service">
+                    <div class="card-body">
+                        <h5 class="card-title">CCTV Camera Service</h5>
+                        <p class="card-text">Installation and repair of CCTV cameras for homes and businesses. Secure your premises with our expert solutions and on-site service.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Repair -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Mobile Repair">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile Repair</h5>
+                        <p class="card-text">Professional mobile repair for all brands. We fix screens, batteries, charging ports, and software issues with convenient door-to-door service.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Door-to-Door Service (Highlighted) -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow border-primary" style="border-width:3px;">
+                    <img src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Door to Door Service">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary fw-bold fs-5">Door-to-Door Service <span class="badge bg-primary ms-2">Main Service</span></h5>
+                        <p class="card-text">Our technicians come directly to your home or office, equipped with the latest tools and expertise to solve your computer, mobile, printer, and CCTV issues on-site. Fast, reliable, and convenient support at your doorstep!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="container py-5" id="products">
+        <h2 class="text-center mb-5 display-5 fw-bold">Our Products</h2>
+        <div class="row g-4">
+            <!-- Laptop -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptops</h5>
+                        <p class="card-text">Latest models and brands of laptops for personal, business, and gaming needs. Expert advice and support available.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Desktop -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Desktop">
+                    <div class="card-body">
+                        <h5 class="card-title">Desktops</h5>
+                        <p class="card-text">High-performance desktops for office, home, and gaming. Custom builds and upgrades available.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Printer -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Printer">
+                    <div class="card-body">
+                        <h5 class="card-title">Printers</h5>
+                        <p class="card-text">All types of printers including inkjet, laser, and multifunction. Installation and support provided.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- CCTV Camera -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="CCTV Camera">
+                    <div class="card-body">
+                        <h5 class="card-title">CCTV Cameras</h5>
+                        <p class="card-text">Surveillance cameras for homes and businesses. Wide range of models and installation services.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Mouse & Keyboard -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Mouse & Keyboard">
+                    <div class="card-body">
+                        <h5 class="card-title">Mouse & Keyboard</h5>
+                        <p class="card-text">Wired and wireless mouse and keyboards for all systems. Ergonomic and gaming options available.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Motherboard -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Motherboard">
+                    <div class="card-body">
+                        <h5 class="card-title">Motherboards</h5>
+                        <p class="card-text">Motherboards for desktops and laptops. Compatible with all major brands and custom builds.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Cables & Chargers -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Cables & Chargers">
+                    <div class="card-body">
+                        <h5 class="card-title">Cables & Chargers</h5>
+                        <p class="card-text">All types of cables and chargers for computers, mobiles, and accessories. Quality and compatibility guaranteed.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Earphones & Headphones -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Earphones & Headphones">
+                    <div class="card-body">
+                        <h5 class="card-title">Earphones & Headphones</h5>
+                        <p class="card-text">Wide range of earphones and headphones, wired and wireless, for all devices and preferences.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Accessories -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Accessories">
+                    <div class="card-body">
+                        <h5 class="card-title">Accessories</h5>
+                        <p class="card-text">All types of computer accessories including webcams, speakers, adapters, and more. Visit us for the latest products.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Reviews Section -->
+    <!-- Contact Us Section -->
+    <section class="container py-5" id="contact">
+        <h2 class="text-center mb-5 display-5 fw-bold">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 mb-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h4 class="fw-bold mb-3">Refresh Computers</h4>
+                        <p class="mb-2"><strong>Owner:</strong> Sandeep Bollam</p>
+                        <p class="mb-2"><strong>Mobile:</strong> <a href="tel:9966008856" class="text-primary">9966008856</a></p>
+                        <p class="mb-2"><strong>Email:</strong> <a href="mailto:bollamsandeep007@gmail.com" class="text-primary">bollamsandeep007@gmail.com</a></p>
+                        <p class="mb-2"><strong>Address:</strong> 1st floor, Post Office Centre, Pathuri Building, 9-4-1, opp. Prakasam Stadium, Area, Kothagudem, Telangana 507101</p>
+                        <p class="mb-2"><strong>Google Maps:</strong> <a href="https://maps.app.goo.gl/dAa865f9kfPKXMAd6" target="_blank" class="text-info">View Location</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="fw-bold mb-3">Find Us Easily</h5>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.google.com/maps?q=1st+floor,+Post+Office+Centre,+Pathuri+Building,+9-4-1,+opp.+Prakasam+Stadium,+Kothagudem,+Telangana+507101&output=embed" allowfullscreen loading="lazy" style="border:0;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container py-5" id="reviews">
+        <h2 class="text-center mb-5 display-5 fw-bold">Customer Reviews</h2>
+        <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <div class="card shadow" style="max-width: 400px; width: 100%;">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-2">
+                                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVvQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQw=s40-c" alt="Sharmila Korakoppula" class="rounded-circle me-2" width="40" height="40">
+                                    <div>
+                                        <h6 class="mb-0">Sharmila Korakoppula</h6>
+                                        <small class="text-muted">3 weeks ago</small>
+                                    </div>
+                                </div>
+                                <div class="mb-2 text-warning">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <p class="card-text">Services doing superb......</p>
+                                <div class="bg-light p-2 rounded mt-2"><small class="text-muted">Response from the owner: Thankyou Brother for valuable feedback ...</small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="card shadow" style="max-width: 400px; width: 100%;">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-2">
+                                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVvQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQw=s40-c" alt="Designer Venu M" class="rounded-circle me-2" width="40" height="40">
+                                    <div>
+                                        <h6 class="mb-0">Designer Venu M</h6>
+                                        <small class="text-muted">10 months ago</small>
+                                    </div>
+                                </div>
+                                <div class="mb-2 text-warning">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <p class="card-text">"Sandeep's REFRESH Computers is a one-stop solution for all your tech needs! His outstanding service, vast knowledge, and friendly approach make him a true expert in his field. Trustworthy, efficient, and always willing to help. I really love this guy for his true helping nature.- Highly Recommended! 5/5 stars!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="card shadow" style="max-width: 400px; width: 100%;">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-2">
+                                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVvQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQw=s40-c" alt="sai ram" class="rounded-circle me-2" width="40" height="40">
+                                    <div>
+                                        <h6 class="mb-0">sai ram <span class="badge bg-info ms-1">Local Guide</span></h6>
+                                        <small class="text-muted">10 months ago</small>
+                                    </div>
+                                </div>
+                                <div class="mb-2 text-warning">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <p class="card-text">If you're looking for the best computer service center in Kothagudem, I highly recommend Refresh Computers. We had a great experience with them for our CCTV camera installation. Whether it's for laptops or desktops, they provide excellent service. If you encounter any issues, this is the place to go!</p>
+                                <div class="bg-light p-2 rounded mt-2"><small class="text-muted">Response from the owner: Thankyou brother...</small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="card shadow" style="max-width: 400px; width: 100%;">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-2">
+                                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVvQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQw=s40-c" alt="SUNIL KUMAR MEDIPALLI" class="rounded-circle me-2" width="40" height="40">
+                                    <div>
+                                        <h6 class="mb-0">SUNIL KUMAR MEDIPALLI</h6>
+                                        <small class="text-muted">a week ago</small>
+                                    </div>
+                                </div>
+                                <div class="mb-2 text-warning">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <p class="card-text">Best Laptop Service shope in kothagudem resanble price</p>
+                                <div class="bg-light p-2 rounded mt-2"><small class="text-muted">Response from the owner: Thankyou sir.</small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="text-center mt-4">
+            <a href="https://maps.app.goo.gl/6PH4gpTkK3MUByYZ8" target="_blank" class="btn btn-outline-primary">See More Google Reviews</a>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="text-center py-3 mt-5">
+    <footer class="text-center py-3 mt-5 bg-dark text-white">
         <p>1st floor, Post Office Centre, Pathuri Building, 9-4-1, opp. Prakasam Stadium, Kothagudem, Telangana 507101</p>
-        <p><a href="https://maps.app.goo.gl/9Kr3DCWxLmxx9WrV8" target="_blank">View on Google Maps</a></p>
+        <p><a href="https://maps.app.goo.gl/9Kr3DCWxLmxx9WrV8" target="_blank" class="text-info">View on Google Maps</a></p>
         <p>&copy; 2025 Refresh Computers. All Rights Reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Enable Bootstrap carousel auto-slide for reviews
+        var reviewsCarousel = document.getElementById('reviewsCarousel');
+        if (reviewsCarousel) {
+            var carousel = new bootstrap.Carousel(reviewsCarousel, {
+                interval: 3000,
+                ride: 'carousel'
+            });
+        }
+    </script>
 </body>
 </html>
