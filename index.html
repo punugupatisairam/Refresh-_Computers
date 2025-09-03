@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>       
+
+    
 </head>
 <body>
     <!-- Header -->
 <header class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <!-- <img src="logo.png" alt="Logo" width="40" height="40" class="me-2" /> -->
-                <span class="fs-4 fw-bold">Refresh Computers</span>
+                <img src="images/RC Logo.jpg" alt="Logo" width="40" height="40" class="me-2 rounded-circle" />
+                <span class="fs-3 fw-bold">Refresh Computers</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,9 +29,10 @@
             <nav class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
                     <!-- <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li> -->
                 </ul>
@@ -34,212 +41,237 @@
     </header>
 
     <!-- Landing Section -->
-    <section class="landing-section d-flex align-items-center justify-content-center text-center">
+    <section class="landing-section d-flex align-items-center justify-content-center text-center ">
         <div class="overlay"></div>
         
         <div class="content position-relative w-100">
             <h1 class="display-2 fw-bold text-white mb-3">Refresh Computers</h1>
-            <h3 class="text-white mb-4"><span class="fw-semibold">Sandeep Bollam</span></h3>
-            <p class="lead text-white mb-4">Your one-stop solution for computer hardware, accessories, and services including door-to-door support.</p>
+            <!-- <h3 class="text-white mb-4"><span class="fw-semibold">Sandeep Bollam</span></h3> -->
+            <p class="lead text-white mb-4 fs-3"> <b>A Multi Brand Sales & Service Shopee</b></p>
             <a href="#products" class="btn btn-primary btn-lg shadow">Shop Now</a>
         </div>
     </section>
+<!-- <div class="row g-4"> -->
 
-    <!-- Services Section -->
-    <section class="container py-5" id="services">
-        <h2 class="text-center mb-5 display-5 fw-bold">Our Services</h2>
-        <div class="row g-4">
-            <!-- Desktop Repair -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Desktop Repair">
-                    <div class="card-body">
-                        <h5 class="card-title">Desktop Repair</h5>
-                        <p class="card-text">Expert troubleshooting and repair for all desktop brands. We fix hardware, software, and offer upgrades with door-to-door service.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Laptop Repair -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Laptop Repair">
-                    <div class="card-body">
-                        <h5 class="card-title">Laptop Repair</h5>
-                        <p class="card-text">Fast and reliable laptop repairs, including screen, battery, keyboard, and motherboard issues. On-site support available.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Printer Service -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Printer Service">
-                    <div class="card-body">
-                        <h5 class="card-title">Printer Service</h5>
-                        <p class="card-text">Comprehensive printer repair and maintenance for all models. We resolve paper jams, connectivity, and ink issues at your doorstep.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- CCTV Camera Service -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="CCTV Camera Service">
-                    <div class="card-body">
-                        <h5 class="card-title">CCTV Camera Service</h5>
-                        <p class="card-text">Installation and repair of CCTV cameras for homes and businesses. Secure your premises with our expert solutions and on-site service.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Mobile Repair -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Mobile Repair">
-                    <div class="card-body">
-                        <h5 class="card-title">Mobile Repair</h5>
-                        <p class="card-text">Professional mobile repair for all brands. We fix screens, batteries, charging ports, and software issues with convenient door-to-door service.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Door-to-Door Service (Highlighted) -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow border-primary" style="border-width:3px;">
-                    <img src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Door to Door Service">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary fw-bold fs-5">Door-to-Door Service <span class="badge bg-primary ms-2">Main Service</span></h5>
-                        <p class="card-text">Our technicians come directly to your home or office, equipped with the latest tools and expertise to solve your computer, mobile, printer, and CCTV issues on-site. Fast, reliable, and convenient support at your doorstep!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Products Section -->
-    <section class="container py-5" id="products">
-        <h2 class="text-center mb-5 display-5 fw-bold">Our Products</h2>
-        <div class="row g-4">
-            <!-- Laptop -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Laptop">
-                    <div class="card-body">
-                        <h5 class="card-title">Laptops</h5>
-                        <p class="card-text">Latest models and brands of laptops for personal, business, and gaming needs. Expert advice and support available.</p>
-                    </div>
-                </div>
+  <!-- Products Section -->
+  <section class="container py-5" id="products">
+    <h2 class="text-center mb-5 display-5 fw-bold bg-warning">Products</h2>
+    <div class="row g-4">
+ <!-- Desktop -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow custom-card p-4">
+          <img src="images/desktop-img.png" class="card-img-top" alt="Desktop">
+          <div class="card-body text-center">
+            <h5 class="card-title">Desktop</h5>
+            <button class="btn btn-primary toggle-btn" data-bs-toggle="collapse" data-bs-target="#desktopDetails">See More</button>
+            <div class="collapse mt-3" id="desktopDetails">
+              <ul class="list-group">
+                <li class="list-group-item">Monitor</li>
+                <li class="list-group-item">Keyboard</li>
+                <li class="list-group-item">Mouse</li>
+                <li class="list-group-item">Motherboard</li>
+                <li class="list-group-item">CPU</li>
+              </ul>
             </div>
-            <!-- Desktop -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Desktop">
-                    <div class="card-body">
-                        <h5 class="card-title">Desktops</h5>
-                        <p class="card-text">High-performance desktops for office, home, and gaming. Custom builds and upgrades available.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Printer -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Printer">
-                    <div class="card-body">
-                        <h5 class="card-title">Printers</h5>
-                        <p class="card-text">All types of printers including inkjet, laser, and multifunction. Installation and support provided.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- CCTV Camera -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="CCTV Camera">
-                    <div class="card-body">
-                        <h5 class="card-title">CCTV Cameras</h5>
-                        <p class="card-text">Surveillance cameras for homes and businesses. Wide range of models and installation services.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Mouse & Keyboard -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Mouse & Keyboard">
-                    <div class="card-body">
-                        <h5 class="card-title">Mouse & Keyboard</h5>
-                        <p class="card-text">Wired and wireless mouse and keyboards for all systems. Ergonomic and gaming options available.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Motherboard -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Motherboard">
-                    <div class="card-body">
-                        <h5 class="card-title">Motherboards</h5>
-                        <p class="card-text">Motherboards for desktops and laptops. Compatible with all major brands and custom builds.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Cables & Chargers -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Cables & Chargers">
-                    <div class="card-body">
-                        <h5 class="card-title">Cables & Chargers</h5>
-                        <p class="card-text">All types of cables and chargers for computers, mobiles, and accessories. Quality and compatibility guaranteed.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Earphones & Headphones -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Earphones & Headphones">
-                    <div class="card-body">
-                        <h5 class="card-title">Earphones & Headphones</h5>
-                        <p class="card-text">Wide range of earphones and headphones, wired and wireless, for all devices and preferences.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Accessories -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Accessories">
-                    <div class="card-body">
-                        <h5 class="card-title">Accessories</h5>
-                        <p class="card-text">All types of computer accessories including webcams, speakers, adapters, and more. Visit us for the latest products.</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-     <!-- Reviews Section -->
-    <!-- Contact Us Section -->
-    <section class="container py-5" id="contact">
-        <h2 class="text-center mb-5 display-5 fw-bold">Contact Us</h2>
-        <div class="row justify-content-center">
-            <div class="col-lg-6 mb-4">
-                <div class="card shadow h-100">
-                    <div class="card-body">
-                        <h4 class="fw-bold mb-3">Refresh Computers</h4>
-                        <p class="mb-2"><strong>Owner:</strong> Sandeep Bollam</p>
-                        <p class="mb-2"><strong>Mobile:</strong> <a href="tel:9966008856" class="text-primary">9966008856</a></p>
-                        <p class="mb-2"><strong>Email:</strong> <a href="mailto:bollamsandeep007@gmail.com" class="text-primary">bollamsandeep007@gmail.com</a></p>
-                        <p class="mb-2"><strong>Address:</strong> 1st floor, Post Office Centre, Pathuri Building, 9-4-1, opp. Prakasam Stadium, Area, Kothagudem, Telangana 507101</p>
-                        <p class="mb-2"><strong>Google Maps:</strong> <a href="https://maps.app.goo.gl/dAa865f9kfPKXMAd6" target="_blank" class="text-info">View Location</a></p>
-                    </div>
-                </div>
+      <!-- Laptop -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow custom-card p-4">
+          <img src="images/laptop-img.png" class="card-img-top" alt="Laptop">
+          <div class="card-body text-center">
+            <h5 class="card-title">Laptop</h5>
+            <button class="btn btn-primary toggle-btn" data-bs-toggle="collapse" data-bs-target="#laptopDetails">See More</button>
+            <div class="collapse mt-3" id="laptopDetails">
+              <ul class="list-group">
+                <li class="list-group-item">Battery</li>
+                <li class="list-group-item">Screen</li>
+                <li class="list-group-item">Keyboard</li>
+                <li class="list-group-item">Touchpad</li>
+                <li class="list-group-item">Charger</li>
+              </ul>
             </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card shadow h-100">
-                    <div class="card-body">
-                        <h5 class="fw-bold mb-3">Find Us Easily</h5>
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.google.com/maps?q=1st+floor,+Post+Office+Centre,+Pathuri+Building,+9-4-1,+opp.+Prakasam+Stadium,+Kothagudem,+Telangana+507101&output=embed" allowfullscreen loading="lazy" style="border:0;"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+
+      <!-- Printer -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow custom-card p-4">
+          <img src="images/prinetr.jpeg" class="card-img-top" alt="Printer">
+          <div class="card-body text-center">
+            <h5 class="card-title">Printer</h5>
+            <button class="btn btn-primary toggle-btn" data-bs-toggle="collapse" data-bs-target="#printerDetails">See More</button>
+            <div class="collapse mt-3" id="printerDetails">
+              <ul class="list-group">
+                <li class="list-group-item">Ink Cartridge</li>
+                <li class="list-group-item">Paper Tray</li>
+                <li class="list-group-item">Scanner</li>
+                <li class="list-group-item">Drum Unit</li>
+                <li class="list-group-item">USB Cable</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow custom-card p-4">
+          <img src="images/mobiles-img.png" class="card-img-top" alt="Mobile">
+          <div class="card-body text-center">
+            <h5 class="card-title">Mobile</h5>
+            <button class="btn btn-primary toggle-btn" data-bs-toggle="collapse" data-bs-target="#mobileDetails">See More</button>
+            <div class="collapse mt-3" id="mobileDetails">
+              <ul class="list-group">
+                <li class="list-group-item">Screen</li>
+                <li class="list-group-item">Battery</li>
+                <li class="list-group-item">Camera</li>
+                <li class="list-group-item">Charger</li>
+                <li class="list-group-item">Earphones</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CC Camera -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow custom-card p-4">
+          <img src="images/CCTV.png" class="card-img-top" alt="CC Camera">
+          <div class="card-body text-center">
+            <h5 class="card-title">CC Camera</h5>
+            <button class="btn btn-primary toggle-btn" data-bs-toggle="collapse" data-bs-target="#cameraDetails">See More</button>
+            <div class="collapse mt-3" id="cameraDetails">
+              <ul class="list-group">
+                <li class="list-group-item">Lens</li>
+                <li class="list-group-item">Night Vision</li>
+                <li class="list-group-item">Storage</li>
+                <li class="list-group-item">Motion Sensor</li>
+                <li class="list-group-item">Cable</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+   
+
+  <!-- Services Section -->
+  <section class="container py-5" id="products">
+    <h2 class="text-center mb-5 display-5 fw-bold bg-warning">Services</h2>
+    <div class="row g-4">
+ <!-- Desktop Services-->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow custom-card">
+          <img src="images/desktop_service_img-2.jpg" class="card-img-top-ser" alt="Desktop">
+          <div class="card-body text-center">
+            <h5 class="card-title">Desktop Services</h5>
+            <button class="btn btn-primary toggle-btn" data-bs-toggle="collapse" data-bs-target="#desktopDetails">See More</button>
+            <div class="collapse mt-3" id="desktopDetails">
+              <ul class="list-group">
+                <li class="list-group-item">Monitor</li>
+                <li class="list-group-item">Keyboard</li>
+                <li class="list-group-item">Mouse</li>
+                <li class="list-group-item">Motherboard</li>
+                <li class="list-group-item">CPU</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laptop Services-->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow custom-card">
+          <img src="images/latop_service_img.webp" class="card-img-top-ser rounded-3" alt="Laptop">
+          <div class="card-body text-center">
+            <h5 class="card-title">Laptop Services</h5>
+            <button class="btn btn-primary toggle-btn" data-bs-toggle="collapse" data-bs-target="#laptopDetails">See More</button>
+            <div class="collapse mt-3" id="laptopDetails">
+              <ul class="list-group">
+                <li class="list-group-item">Battery</li>
+                <li class="list-group-item">Screen</li>
+                <li class="list-group-item">Keyboard</li>
+                <li class="list-group-item">Touchpad</li>
+                <li class="list-group-item">Charger</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Printer Services-->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow custom-card">
+          <img src="images/printer_service_img.jpg" class="card-img-top-ser" alt="Printer">
+          <div class="card-body text-center">
+            <h5 class="card-title">Printer Services</h5>
+            <button class="btn btn-primary toggle-btn" data-bs-toggle="collapse" data-bs-target="#printerDetails">See More</button>
+            <div class="collapse mt-3" id="printerDetails">
+              <ul class="list-group">
+                <li class="list-group-item">Ink Cartridge</li>
+                <li class="list-group-item">Paper Tray</li>
+                <li class="list-group-item">Scanner</li>
+                <li class="list-group-item">Drum Unit</li>
+                <li class="list-group-item">USB Cable</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Services-->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow custom-card">
+          <img src="images/mobile_service_img.webp" class="card-img-top-ser" alt="Mobile">
+          <div class="card-body text-center">
+            <h5 class="card-title">Mobile Services</h5>
+            <button class="btn btn-primary toggle-btn" data-bs-toggle="collapse" data-bs-target="#mobileDetails">See More</button>
+            <div class="collapse mt-3" id="mobileDetails">
+              <ul class="list-group">
+                <li class="list-group-item">Screen</li>
+                <li class="list-group-item">Battery</li>
+                <li class="list-group-item">Camera</li>
+                <li class="list-group-item">Charger</li>
+                <li class="list-group-item">Earphones</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CC Camera Services-->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow custom-card">
+          <img src="images/cc_camera_service_img.jpg" class="card-img-top-ser" alt="CC Camera">
+          <div class="card-body text-center">
+            <h5 class="card-title">CC Camera Services</h5>
+            <button class="btn btn-primary toggle-btn" data-bs-toggle="collapse" data-bs-target="#cameraDetails">See More</button>
+            <div class="collapse mt-3" id="cameraDetails">
+              <ul class="list-group">
+                <li class="list-group-item">Lens</li>
+                <li class="list-group-item">Night Vision</li>
+                <li class="list-group-item">Storage</li>
+                <li class="list-group-item">Motion Sensor</li>
+                <li class="list-group-item">Cable</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+      
+    <!-- Reviews Section -->
     <section class="container py-5" id="reviews">
-        <h2 class="text-center mb-5 display-5 fw-bold">Customer Reviews</h2>
+        <h2 class="text-center mb-5 display-5 fw-bold bg-warning">Customer Reviews</h2>
         <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -348,26 +380,123 @@
             </button>
         </div>
         <div class="text-center mt-4">
-            <a href="https://maps.app.goo.gl/6PH4gpTkK3MUByYZ8" target="_blank" class="btn btn-outline-primary">See More Google Reviews</a>
+            <a href="https://www.google.com/maps/place/REFRESH+COMPUTERS/@17.5449098,80.6181112,17z/data=!3m1!5s0x3a3410b3b7a3c3d1:0x4d440b8a9907b172!4m8!3m7!1s0x3a3410b2fe4d5ef3:0xf23bafb7ace09d92!8m2!3d17.5449098!4d80.6181112!9m1!1b1!16s%2Fg%2F11c67p503x?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-outline-primary">See More Google Reviews</a>
+        </div>
+    </section>
+    <!-- About Us Section -->
+    <section class="container py-5" id="about">
+        <h2 class="text-center mb-5 display-5 fw-bold bg-warning">About Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow h-100 w-100">
+                    <div class="card-body">
+                        <h4 class="fw-bold mb-3">Properitor : Bollam Sandeep Kumar</h4>
+                        <p class="mb-2"><strong>GST Number:</strong> 3456</p>
+                        <p class="mb-2"><strong>Shop Number:</strong> </p>
+                        <p class="mb-2"><strong>Established:</strong> 2014</p>
+                        <h4 class="fw-bold mb-3">Refresh Computers</h4>
+                        <p class="mb-2"><strong>Mobile:</strong> <a href="tel:9966008856" class="text-primary">+91 9966008856</a></p>
+                        <p class="mb-2"><strong>Email:</strong> <a href="mailto:refreshcomputersktdm@gmail.com" class="text-primary">refreshcomputersktdm@gmail.com</a></p>
+                        <p class="mb-2"><strong>Address:</strong> # 9-4-11st floor, Pathuri Building, opp.Prakasam Stadium, Post Office Area, Bhdradri Kothagudem, Telangana 507101.</p>
+                        <p class="mb-2"><strong>Location:</strong> Click Here for the Location => 
+                            <a href="https://maps.app.goo.gl/zJW35wf9ddTjbqJY6" target="_blank" class="btn btn-outline-primary">Get Directions</a>
+                        </p>
+                        <!-- <div class="d-flex align-items-center gap-3 mt-3">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=refreshcomputersktdm@gmail.com" target="_blank">
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us Section -->
+    <section class="container py-5" id="contact">
+        <h2 class="text-center mb-5 display-5 fw-bold bg-warning">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 mb-4">
+                <div class="card shadow h-100">
+                    <div class="card-body ">
+                        <h4 class="fw-bold mb-3">Refresh Computers</h4>
+                        
+                        <p class="mb-2">
+                        <strong><i class="fas fa-phone-alt text-success"></i> Mobile:</strong>
+                        <a href="tel:9966008856" class="text-primary">+91 9966008856</a>
+                        </p>
+
+                        <p class="mb-2">
+                        <strong><i class="fas fa-envelope text-danger"></i> Email:</strong>
+                        <a href="mailto:refreshcomputersktdm@gmail.com" class="text-primary">refreshcomputersktdm@gmail.com</a>
+                        </p>
+
+                        <p class="mb-2">
+                        <strong><i class="fas fa-map-marker-alt text-warning"></i> Address:</strong>
+                        # 9-4-11st floor, Pathuri Building, opp.Prakasam Stadium, Post Office Area, Bhdradri Kothagudem, Telangana 507101.
+                        </p>
+
+                        <p class="mb-2">
+                        <strong><i class="fas fa-location-arrow text-primary"></i> Location:</strong>
+                        Click Here for the Location => 
+                        <a href="https://maps.app.goo.gl/zJW35wf9ddTjbqJY6" target="_blank" class="btn btn-outline-primary">Get Directions</a>
+                        </p>
+
+
+                        <div class="d-flex align-items-center gap-3 mt-3">
+                        <a href="https://wa.me/919966008856" target="_blank" class="text-success fs-2">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/19t6nUuVhH/" target="_blank" class="text-primary fs-2">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/refreshcomputers_ktdm?igsh=MW9uNGRoMHZrbzFoeg==" target="_blank" class="text-danger fs-2">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@RefreshComputers_ktdm" target="_blank" class="text-danger fs-2">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+
+                        <a href="mailto:refreshcomputersktdm@gmail.com" target="_blank" class="text-danger fs-2">
+                        <i class="bi bi-envelope-fill"></i>
+                        </a>
+
+                        <!-- <a href="mailto:refreshcomputersktdm@gmail.com" target="_blank" class="d-flex align-items-center">
+                        <img src="images/gmail_logo.png" alt="Gmail" style="width:45px; height:45px; object-fit:contain;">
+                        </a> -->
+
+                        <a href="https://www.threads.com/@refreshcomputers_ktdm" target="_blank" class="text-dark fs-2">
+                            <i class="bi bi-threads-fill"></i>
+                        </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="fw-bold mb-3">Find Us Easily</h5>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.google.com/maps?q=1st+floor,+Post+Office+Centre,+Pathuri+Building,+9-4-1,+opp.+Prakasam+Stadium,+Kothagudem,+Telangana+507101&output=embed" allowfullscreen loading="lazy" style="border:0;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-center py-3 mt-5 bg-dark text-white">
-        <p>1st floor, Post Office Centre, Pathuri Building, 9-4-1, opp. Prakasam Stadium, Kothagudem, Telangana 507101</p>
-        <p><a href="https://maps.app.goo.gl/9Kr3DCWxLmxx9WrV8" target="_blank" class="text-info">View on Google Maps</a></p>
-        <p>&copy; 2025 Refresh Computers. All Rights Reserved.</p>
+
+   <!-- Footer -->
+    <footer class="text-center py-3 mt-5 bg-dark text-white" style="margin:0; padding:10px 0; width:100%; left:0; right:0;">
+    <p class="mb-1"># 9-4-11st floor, Pathuri Building, opp.Prakasam Stadium, Post Office Area, Bhadradri Kothagudem, Telangana 507101</p>
+    <p class="mb-1">
+        <a href="https://www.google.com/maps/place/REFRESH+COMPUTERS/@17.5449098,80.6181112,17z" 
+        target="_blank" 
+        class="text-info text-decoration-none">
+        View on Google Maps
+        </a>
+    </p>
+    <p class="mb-0">&copy; 2025 Refresh Computers. All Rights Reserved.</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Enable Bootstrap carousel auto-slide for reviews
-        var reviewsCarousel = document.getElementById('reviewsCarousel');
-        if (reviewsCarousel) {
-            var carousel = new bootstrap.Carousel(reviewsCarousel, {
-                interval: 3000,
-                ride: 'carousel'
-            });
-        }
-    </script>
-</body>
+
+    
 </html>
