@@ -71,6 +71,9 @@ body {
   object-fit: cover;     /* fills card, crops extra */
   background-color: #f8f9fa; /* fallback bg if image is small */
 }
+.GST{
+    font-size: large;
+}
 
 
 @media (max-width: 768px) {
